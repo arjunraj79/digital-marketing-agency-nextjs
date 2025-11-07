@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await getPageData(params);
   
   return {
-    title: locale === 'ar' ? 'خدماتنا - موصلنين' : 'Our Services - Mu3lnen',
+    title: locale === 'ar' ? 'خدماتنا - موصلنين' : 'Our Services - Digital Architect',
     description: locale === 'ar' 
       ? 'استكشف خدماتنا المتخصصة في التسويق الرقمي'
       : 'Explore our specialized digital marketing services',

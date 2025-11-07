@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           <div>
             <h3 className="text-2xl font-bold text-purple-600 mb-6">
-              Mu3lnen
+              Digital Architect
             </h3>
             <p className="text-gray-500 dark:text-black-400">
               Kuwait&apos;s Leading Digital Marketing Agency, delivering exceptional results through innovative strategies.
@@ -29,7 +29,7 @@ export function Footer() {
             <h4 className="font-bold text-lg mb-6 text-gray-900 dark:text-white">Contact</h4>
             <ul className="space-y-4">
               <li>Kuwait City, Kuwait</li>
-              <li>info@Mu3lnen.com</li>
+              <li>info@Digital Architect.com</li>
               <li>+965 XXXX XXXX</li>
             </ul>
           </div>
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 text-center text-gray-500 dark:text-black-400">
-          <p>&copy; {new Date().getFullYear()} Mu3lnen Digital Marketing Agency. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Digital Architect Digital Marketing Agency. All rights reserved.</p>
         </div>
       </div>
     </footer>

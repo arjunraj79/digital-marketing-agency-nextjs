@@ -14,7 +14,7 @@ const cairo = Cairo({
 })
 
 export const metadata: Metadata = {
-  title: 'Mu3lnen Digital Agency',
+  title: 'Digital Architect Agency',
   description: 'Kuwait\'s Premier Digital Marketing Agency',
 }
 

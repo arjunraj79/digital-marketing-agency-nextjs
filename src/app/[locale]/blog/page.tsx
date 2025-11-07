@@ -15,7 +15,7 @@ export async function generateMetadata({
   const isArabic = params.locale === 'ar';
   
   return {
-    title: isArabic ? 'المدونة | موصلنين' : 'Blog | Mu3lnen',
+    title: isArabic ? 'المدونة | موصلنين' : 'Blog | Digital Architect',
     description: isArabic 
       ? 'اقرأ أحدث المقالات والأفكار حول التسويق الرقمي'
       : 'Read our latest articles and insights about digital marketing',

@@ -3,7 +3,7 @@ import { headers } from 'next/headers';
 import { Metadata } from 'next';
 
 export const getMetadataBase = (): string => {
-  const host = headers().get('host') || 'mu3lnen.com';
+  const host = headers().get('host') || 'Digital Architect.com';
   return `https://${host.replace(/\/$/, '')}`;
 };
 
@@ -21,14 +21,14 @@ export const getLocalizedMetadata = (
 
   const titles = {
     home: {
-      en: 'Mu3lnen - Leading Digital Marketing Agency in Kuwait',
+      en: 'Digital Architect - Leading Digital Marketing Agency in Kuwait',
       ar: 'موصلنين - وكالة التسويق الرقمي الرائدة في الكويت',
     },
   };
 
   const descriptions = {
     home: {
-      en: 'Mu3lnen is Kuwait\'s premier digital marketing agency, offering SEO, social media marketing, web design, and paid advertising services.',
+      en: 'Digital Architect is Kuwait\'s premier digital marketing agency, offering SEO, social media marketing, web design, and paid advertising services.',
       ar: 'موصلنين هي وكالة التسويق الرقمي الرائدة في الكويت، نقدم خدمات تحسين محركات البحث، التسويق عبر وسائل التواصل الاجتماعي، تصميم المواقع والإعلانات المدفوعة.',
     },
   };

@@ -12,7 +12,7 @@ export interface ServiceSchemaData {
 }
 
 export function generateServiceSchema(data: ServiceSchemaData, isSubService: boolean = false) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mu3lnen.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalarchitect.dev';
   
   return {
     "@context": "https://schema.org",
@@ -29,7 +29,7 @@ export function generateServiceSchema(data: ServiceSchemaData, isSubService: boo
     },
     "provider": {
       "@type": "Organization",
-      "name": "Mu3lnen Digital Marketing Agency",
+      "name": "Digital Architect Digital Marketing Agency",
       "url": baseUrl,
       "logo": `${baseUrl}/logo.png`,
       "address": {
@@ -43,7 +43,7 @@ export function generateServiceSchema(data: ServiceSchemaData, isSubService: boo
         "@type": "ContactPoint",
         "telephone": "+965-XXXX-XXXX",
         "contactType": "customer service",
-        "email": "info@mu3lnen.com",
+        "email": "info@Digital Architect.com",
         "availableLanguage": ["English", "Arabic"]
       }
     },
@@ -80,9 +80,9 @@ export function generateServiceSchema(data: ServiceSchemaData, isSubService: boo
       "closes": "18:00"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/mu3lnen",
-      "https://www.instagram.com/mu3lnen",
-      "https://twitter.com/mu3lnen"
+      "https://www.linkedin.com/company/Digital Architect",
+      "https://www.instagram.com/Digital Architect",
+      "https://twitter.com/Digital Architect"
     ],
     "image": [
       `${baseUrl}/images/digital-marketing-kuwait.jpg`

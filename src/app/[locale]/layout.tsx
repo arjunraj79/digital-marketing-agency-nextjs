@@ -20,13 +20,13 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isArabic = params.locale === 'ar';
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mu3lnen.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalarchitect.dev';
 
   return {
     metadataBase: new URL(baseUrl),
     title: {
-      template: isArabic ? '%s | موصلنين' : '%s | Mu3lnen',
-      default: isArabic ? 'موصلنين - وكالة التسويق الرقمي الرائدة في الكويت' : 'Mu3lnen - Leading Digital Marketing Agency in Kuwait',
+      template: isArabic ? '%s | موصلنين' : '%s | Digital Architect',
+      default: isArabic ? 'موصلنين - وكالة التسويق الرقمي الرائدة في الكويت' : 'Digital Architect - Leading Marketing Agency in Kuwait',
     },
     alternates: {
       canonical: baseUrl,

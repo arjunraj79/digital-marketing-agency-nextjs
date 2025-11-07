@@ -14,7 +14,7 @@ const generateSchema = (metadataBase: string, isArabic: boolean) => ({
     {
       "@type": "Organization",
       "@id": `${metadataBase}/#organization`,
-      "name": isArabic ? "موصلنين" : "Mu3lnen Digital Marketing Agency",
+      "name": isArabic ? "موصلنين" : "Digital Architect Marketing Agency",
       "url": metadataBase,
       "logo": {
         "@type": "ImageObject",
@@ -23,13 +23,13 @@ const generateSchema = (metadataBase: string, isArabic: boolean) => ({
         "contentUrl": `${metadataBase}/logo.png`,
         "width": 112,
         "height": 112,
-        "caption": isArabic ? "شعار موصلنين" : "Mu3lnen Logo"
+        "caption": isArabic ? "شعار موصلنين" : "Digital Architect Logo"
       },
       "sameAs": [
-        "https://www.facebook.com/mu3lnen",
-        "https://twitter.com/mu3lnen",
-        "https://www.instagram.com/mu3lnen",
-        "https://www.linkedin.com/company/mu3lnen"
+        "https://www.facebook.com/#",
+        "https://twitter.com/#",
+        "https://www.instagram.com/#",
+        "https://www.linkedin.com/company/#"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -43,7 +43,7 @@ const generateSchema = (metadataBase: string, isArabic: boolean) => ({
       "@type": "WebSite",
       "@id": `${metadataBase}/#website`,
       "url": metadataBase,
-      "name": isArabic ? "موصلنين" : "Mu3lnen Digital Marketing Agency",
+      "name": isArabic ? "موصلنين" : "Digital Architect Marketing Agency",
       "description": isArabic 
         ? "وكالة التسويق الرقمي الرائدة في الكويت"
         : "Kuwait's Leading Digital Marketing Agency",
@@ -55,7 +55,7 @@ const generateSchema = (metadataBase: string, isArabic: boolean) => ({
     {
       "@type": "LocalBusiness",
       "@id": `${metadataBase}/#localbusiness`,
-      "name": isArabic ? "موصلنين" : "Mu3lnen Digital Marketing Agency",
+      "name": isArabic ? "موصلنين" : "Digital Architect Marketing Agency",
       "url": metadataBase,
       "logo": {
         "@id": `${metadataBase}/#logo`
@@ -91,19 +91,19 @@ const generateSchema = (metadataBase: string, isArabic: boolean) => ({
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isArabic = params.locale === 'ar';
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mu3lnen.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalarchitect.dev';
 
   return {
     metadataBase: new URL(baseUrl),
     title: isArabic 
       ? 'موصلنين - وكالة التسويق الرقمي الرائدة في الكويت'
-      : 'Mu3lnen - Leading Digital Marketing Agency in Kuwait',
+      : 'Digital Architect - Leading Digital Marketing Agency in Kuwait',
     description: isArabic
       ? 'وكالة التسويق الرقمي الرائدة في الكويت، نقدم حلولاً رقمية مبتكرة'
       : "Kuwait's leading digital marketing agency, delivering innovative digital solutions",
     openGraph: {
       type: 'website',
-      siteName: isArabic ? 'موصلنين' : 'Mu3lnen',
+      siteName: isArabic ? 'موصلنين' : 'Digital Architect',
       locale: params.locale,
       alternateLocale: params.locale === 'ar' ? 'en' : 'ar',
     },
@@ -128,7 +128,7 @@ function JsonLd({ schema }: { schema: any }) {
 
 export default function HomePage({ params }: Props) {
   const isArabic = params.locale === 'ar';
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mu3lnen.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalarchitect.dev';
   const schema = generateSchema(baseUrl, isArabic);
 
   return (

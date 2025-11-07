@@ -1,6 +1,6 @@
 # Environment Variables Documentation
 
-This document describes all environment variables used in the Mu3lnen Digital Marketing Agency website.
+This document describes all environment variables used in the Digital Architect Digital Marketing Agency website.
 
 ## Required Variables
 

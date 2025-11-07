@@ -11,8 +11,8 @@
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 </div>
 <div class="file" style="margin-left: 0px;">📄 .env.production</div>
-<div class="content">NEXT_PUBLIC_API_URL=https://mu3lnen.com/api
-NEXT_PUBLIC_SITE_URL=https://mu3lnen.com
+<div class="content">NEXT_PUBLIC_API_URL=https://digitalarchitect.dev/api
+NEXT_PUBLIC_SITE_URL=https://digitalarchitect.dev
 </div>
 <div class="file" style="margin-left: 0px;">📄 .eslintrc.json</div>
 <div class="content">{
@@ -45,7 +45,7 @@ auto-install-peers=true
 <div class="file" style="margin-left: 0px;">📄 ENV.md</div>
 <div class="content"># Environment Variables Documentation
 
-This document describes all environment variables used in the Mu3lnen Digital Marketing Agency website.
+This document describes all environment variables used in the Digital Architect Digital Marketing Agency website.
 
 ## Required Variables
 
@@ -508,8 +508,8 @@ export default makeSource({
     }
   }</div>
 <div class="file" style="margin-left: 0px;">📄 env.example.txt</div>
-<div class="content">NEXT_PUBLIC_API_URL=https://mu3lnen.com/api
-NEXT_PUBLIC_SITE_URL=https://mu3lnen.com
+<div class="content">NEXT_PUBLIC_API_URL=https://digitalarchitect.dev/api
+NEXT_PUBLIC_SITE_URL=https://digitalarchitect.dev
 </div>
 <div class="file" style="margin-left: 0px;">📄 files.py</div>
 <div class="content">import os
@@ -822,7 +822,7 @@ export async function generateMetadata({
   const isArabic = params.locale === &#x27;ar&#x27;;
   
   return {
-    title: isArabic ? &#x27;المدونة | موصلنين&#x27; : &#x27;Blog | Mu3lnen&#x27;,
+    title: isArabic ? &#x27;المدونة | موصلنين&#x27; : &#x27;Blog | Digital Architect&#x27;,
     description: isArabic 
       ? &#x27;اقرأ أحدث المقالات والأفكار حول التسويق الرقمي&#x27;
       : &#x27;Read our latest articles and insights about digital marketing&#x27;,
@@ -871,13 +871,13 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise&lt;Metadata&gt; {
   const isArabic = params.locale === &#x27;ar&#x27;;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://mu3lnen.com&#x27;;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://digitalarchitect.dev&#x27;;
 
   return {
     metadataBase: new URL(baseUrl),
     title: {
-      template: isArabic ? &#x27;%s | موصلنين&#x27; : &#x27;%s | Mu3lnen&#x27;,
-      default: isArabic ? &#x27;موصلنين - وكالة التسويق الرقمي الرائدة في الكويت&#x27; : &#x27;Mu3lnen - Leading Digital Marketing Agency in Kuwait&#x27;,
+      template: isArabic ? &#x27;%s | موصلنين&#x27; : &#x27;%s | Digital Architect&#x27;,
+      default: isArabic ? &#x27;موصلنين - وكالة التسويق الرقمي الرائدة في الكويت&#x27; : &#x27;Digital Architect - Leading Digital Marketing Agency in Kuwait&#x27;,
     },
     alternates: {
       canonical: baseUrl,
@@ -940,7 +940,7 @@ const generateSchema = (metadataBase: string, isArabic: boolean) =&gt; ({
     {
       &quot;@type&quot;: &quot;Organization&quot;,
       &quot;@id&quot;: `${metadataBase}/#organization`,
-      &quot;name&quot;: isArabic ? &quot;موصلنين&quot; : &quot;Mu3lnen Digital Marketing Agency&quot;,
+      &quot;name&quot;: isArabic ? &quot;موصلنين&quot; : &quot;Digital Architect Digital Marketing Agency&quot;,
       &quot;url&quot;: metadataBase,
       &quot;logo&quot;: {
         &quot;@type&quot;: &quot;ImageObject&quot;,
@@ -949,13 +949,13 @@ const generateSchema = (metadataBase: string, isArabic: boolean) =&gt; ({
         &quot;contentUrl&quot;: `${metadataBase}/logo.png`,
         &quot;width&quot;: 112,
         &quot;height&quot;: 112,
-        &quot;caption&quot;: isArabic ? &quot;شعار موصلنين&quot; : &quot;Mu3lnen Logo&quot;
+        &quot;caption&quot;: isArabic ? &quot;شعار موصلنين&quot; : &quot;Digital Architect Logo&quot;
       },
       &quot;sameAs&quot;: [
-        &quot;https://www.facebook.com/mu3lnen&quot;,
-        &quot;https://twitter.com/mu3lnen&quot;,
-        &quot;https://www.instagram.com/mu3lnen&quot;,
-        &quot;https://www.linkedin.com/company/mu3lnen&quot;
+        &quot;https://www.facebook.com/Digital Architect&quot;,
+        &quot;https://twitter.com/Digital Architect&quot;,
+        &quot;https://www.instagram.com/Digital Architect&quot;,
+        &quot;https://www.linkedin.com/company/Digital Architect&quot;
       ],
       &quot;contactPoint&quot;: {
         &quot;@type&quot;: &quot;ContactPoint&quot;,
@@ -969,7 +969,7 @@ const generateSchema = (metadataBase: string, isArabic: boolean) =&gt; ({
       &quot;@type&quot;: &quot;WebSite&quot;,
       &quot;@id&quot;: `${metadataBase}/#website`,
       &quot;url&quot;: metadataBase,
-      &quot;name&quot;: isArabic ? &quot;موصلنين&quot; : &quot;Mu3lnen Digital Marketing Agency&quot;,
+      &quot;name&quot;: isArabic ? &quot;موصلنين&quot; : &quot;Digital Architect Digital Marketing Agency&quot;,
       &quot;description&quot;: isArabic 
         ? &quot;وكالة التسويق الرقمي الرائدة في الكويت&quot;
         : &quot;Kuwait&#x27;s Leading Digital Marketing Agency&quot;,
@@ -981,7 +981,7 @@ const generateSchema = (metadataBase: string, isArabic: boolean) =&gt; ({
     {
       &quot;@type&quot;: &quot;LocalBusiness&quot;,
       &quot;@id&quot;: `${metadataBase}/#localbusiness`,
-      &quot;name&quot;: isArabic ? &quot;موصلنين&quot; : &quot;Mu3lnen Digital Marketing Agency&quot;,
+      &quot;name&quot;: isArabic ? &quot;موصلنين&quot; : &quot;Digital Architect Digital Marketing Agency&quot;,
       &quot;url&quot;: metadataBase,
       &quot;logo&quot;: {
         &quot;@id&quot;: `${metadataBase}/#logo`
@@ -1017,19 +1017,19 @@ const generateSchema = (metadataBase: string, isArabic: boolean) =&gt; ({
 
 export async function generateMetadata({ params }: Props): Promise&lt;Metadata&gt; {
   const isArabic = params.locale === &#x27;ar&#x27;;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://mu3lnen.com&#x27;;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://digitalarchitect.dev&#x27;;
 
   return {
     metadataBase: new URL(baseUrl),
     title: isArabic 
       ? &#x27;موصلنين - وكالة التسويق الرقمي الرائدة في الكويت&#x27;
-      : &#x27;Mu3lnen - Leading Digital Marketing Agency in Kuwait&#x27;,
+      : &#x27;Digital Architect - Leading Digital Marketing Agency in Kuwait&#x27;,
     description: isArabic
       ? &#x27;وكالة التسويق الرقمي الرائدة في الكويت، نقدم حلولاً رقمية مبتكرة&#x27;
       : &quot;Kuwait&#x27;s leading digital marketing agency, delivering innovative digital solutions&quot;,
     openGraph: {
       type: &#x27;website&#x27;,
-      siteName: isArabic ? &#x27;موصلنين&#x27; : &#x27;Mu3lnen&#x27;,
+      siteName: isArabic ? &#x27;موصلنين&#x27; : &#x27;Digital Architect&#x27;,
       locale: params.locale,
       alternateLocale: params.locale === &#x27;ar&#x27; ? &#x27;en&#x27; : &#x27;ar&#x27;,
     },
@@ -1054,7 +1054,7 @@ function JsonLd({ schema }: { schema: any }) {
 
 export default function HomePage({ params }: Props) {
   const isArabic = params.locale === &#x27;ar&#x27;;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://mu3lnen.com&#x27;;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://digitalarchitect.dev&#x27;;
   const schema = generateSchema(baseUrl, isArabic);
 
   return (
@@ -1116,7 +1116,7 @@ export async function generateMetadata({ params }: Props): Promise&lt;Metadata&g
   if (!subService) return { title: &#x27;Not Found&#x27; };
 
   const content = subService[locale];
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://mu3lnen.com&#x27;;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://digitalarchitect.dev&#x27;;
   const url = `${baseUrl}/${locale}/services/${params.serviceSlug}/${params.subServiceSlug}`;
 
   return {
@@ -1203,7 +1203,7 @@ export async function generateMetadata({ params }: Props): Promise&lt;Metadata&g
   if (!service) return { title: &#x27;Not Found&#x27; };
 
   const content = service[locale];
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://mu3lnen.com&#x27;;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://digitalarchitect.dev&#x27;;
   const url = `${baseUrl}/${locale}/services/${service.slug}`;
 
   return {
@@ -1327,7 +1327,7 @@ export async function generateMetadata({ params }: Props): Promise&lt;Metadata&g
   const { locale } = await getPageData(params);
   
   return {
-    title: locale === &#x27;ar&#x27; ? &#x27;خدماتنا - موصلنين&#x27; : &#x27;Our Services - Mu3lnen&#x27;,
+    title: locale === &#x27;ar&#x27; ? &#x27;خدماتنا - موصلنين&#x27; : &#x27;Our Services - Digital Architect&#x27;,
     description: locale === &#x27;ar&#x27; 
       ? &#x27;استكشف خدماتنا المتخصصة في التسويق الرقمي&#x27;
       : &#x27;Explore our specialized digital marketing services&#x27;,
@@ -1405,7 +1405,7 @@ const cairo = Cairo({
 })
 
 export const metadata: Metadata = {
-  title: &#x27;Mu3lnen Digital Agency&#x27;,
+  title: &#x27;Digital Architect Digital Agency&#x27;,
   description: &#x27;Kuwait\&#x27;s Premier Digital Marketing Agency&#x27;,
 }
 
@@ -1563,7 +1563,7 @@ export function Footer() {
         &lt;div className=&quot;grid md:grid-cols-4 gap-12&quot;&gt;
           &lt;div&gt;
             &lt;h3 className=&quot;text-2xl font-bold text-purple-600 mb-6&quot;&gt;
-              Mu3lnen
+              Digital Architect
             &lt;/h3&gt;
             &lt;p className=&quot;text-gray-500 dark:text-black-400&quot;&gt;
               Kuwait&amp;apos;s Leading Digital Marketing Agency, delivering exceptional results through innovative strategies.
@@ -1582,7 +1582,7 @@ export function Footer() {
             &lt;h4 className=&quot;font-bold text-lg mb-6 text-gray-900 dark:text-white&quot;&gt;Contact&lt;/h4&gt;
             &lt;ul className=&quot;space-y-4&quot;&gt;
               &lt;li&gt;Kuwait City, Kuwait&lt;/li&gt;
-              &lt;li&gt;info@Mu3lnen.com&lt;/li&gt;
+              &lt;li&gt;info@Digital Architect.com&lt;/li&gt;
               &lt;li&gt;+965 XXXX XXXX&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/div&gt;
@@ -1605,7 +1605,7 @@ export function Footer() {
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div className=&quot;border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 text-center text-gray-500 dark:text-black-400&quot;&gt;
-          &lt;p&gt;&amp;copy; {new Date().getFullYear()} Mu3lnen Digital Marketing Agency. All rights reserved.&lt;/p&gt;
+          &lt;p&gt;&amp;copy; {new Date().getFullYear()} Digital Architect Digital Marketing Agency. All rights reserved.&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/footer&gt;
@@ -1650,7 +1650,7 @@ export const Header = () =&gt; {
         &lt;div className=&quot;flex justify-between h-20&quot;&gt;
           &lt;div className=&quot;flex items-center&quot;&gt;
             &lt;Link href={`/${currentLocale}`} className=&quot;text-4xl font-bold text-purple-600&quot;&gt;
-              Mu3lnen
+              Digital Architect
             &lt;/Link&gt;
           &lt;/div&gt;
           
@@ -1756,7 +1756,7 @@ export const Hero = () =&gt; {
       &gt;
         &lt;div className=&quot;relative w-full h-full&quot;&gt;
           &lt;Image
-            src=&quot;/hero-image.jpg&quot;
+            src=&quot;/hero-image.png&quot;
             alt=&quot;hero&quot;
             fill
             className=&quot;mx-auto rounded-2xl object-cover object-center&quot;
@@ -2127,7 +2127,7 @@ interface SchemaProps {
 
 export default function Schema({ type, locale }: SchemaProps) {
   const isArabic = locale === &#x27;ar&#x27;;
-  const baseUrl = &#x27;https://mu3lnen.com&#x27;;
+  const baseUrl = &#x27;https://digitalarchitect.dev&#x27;;
 
   const graph: WithContext&lt;Graph&gt; = {
     &#x27;@context&#x27;: &#x27;https://schema.org&#x27;,
@@ -2135,7 +2135,7 @@ export default function Schema({ type, locale }: SchemaProps) {
       {
         &#x27;@type&#x27;: &#x27;Organization&#x27;,
         &#x27;@id&#x27;: `${baseUrl}/#organization`,
-        name: isArabic ? &#x27;موصلنين&#x27; : &#x27;Mu3lnen Digital Marketing Agency&#x27;,
+        name: isArabic ? &#x27;موصلنين&#x27; : &#x27;Digital Architect Digital Marketing Agency&#x27;,
         url: baseUrl,
         logo: {
           &#x27;@type&#x27;: &#x27;ImageObject&#x27;,
@@ -2144,13 +2144,13 @@ export default function Schema({ type, locale }: SchemaProps) {
           contentUrl: `${baseUrl}/logo.png`,
           width: 112,
           height: 112,
-          caption: isArabic ? &#x27;شعار موصلنين&#x27; : &#x27;Mu3lnen Logo&#x27;
+          caption: isArabic ? &#x27;شعار موصلنين&#x27; : &#x27;Digital Architect Logo&#x27;
         },
         sameAs: [
-          &#x27;https://www.facebook.com/mu3lnen&#x27;,
-          &#x27;https://twitter.com/mu3lnen&#x27;,
-          &#x27;https://www.instagram.com/mu3lnen&#x27;,
-          &#x27;https://www.linkedin.com/company/mu3lnen&#x27;
+          &#x27;https://www.facebook.com/Digital Architect&#x27;,
+          &#x27;https://twitter.com/Digital Architect&#x27;,
+          &#x27;https://www.instagram.com/Digital Architect&#x27;,
+          &#x27;https://www.linkedin.com/company/Digital Architect&#x27;
         ],
         contactPoint: {
           &#x27;@type&#x27;: &#x27;ContactPoint&#x27;,
@@ -2164,7 +2164,7 @@ export default function Schema({ type, locale }: SchemaProps) {
         &#x27;@type&#x27;: &#x27;WebSite&#x27;,
         &#x27;@id&#x27;: `${baseUrl}/#website`,
         url: baseUrl,
-        name: isArabic ? &#x27;موصلنين&#x27; : &#x27;Mu3lnen Digital Marketing Agency&#x27;,
+        name: isArabic ? &#x27;موصلنين&#x27; : &#x27;Digital Architect Digital Marketing Agency&#x27;,
         description: isArabic 
           ? &#x27;وكالة التسويق الرقمي الرائدة في الكويت&#x27;
           : &quot;Kuwait&#x27;s Leading Digital Marketing Agency&quot;,
@@ -2176,7 +2176,7 @@ export default function Schema({ type, locale }: SchemaProps) {
       {
         &#x27;@type&#x27;: &#x27;LocalBusiness&#x27;,
         &#x27;@id&#x27;: `${baseUrl}/#localbusiness`,
-        name: isArabic ? &#x27;موصلنين&#x27; : &#x27;Mu3lnen Digital Marketing Agency&#x27;,
+        name: isArabic ? &#x27;موصلنين&#x27; : &#x27;Digital Architect Digital Marketing Agency&#x27;,
         url: baseUrl,
         logo: {
           &#x27;@id&#x27;: `${baseUrl}/#logo`
@@ -5778,7 +5778,7 @@ export interface ServiceSchemaData {
 }
 
 export function generateServiceSchema(data: ServiceSchemaData, isSubService: boolean = false) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://mu3lnen.com&#x27;;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || &#x27;https://digitalarchitect.dev&#x27;;
   
   return {
     &quot;@context&quot;: &quot;https://schema.org&quot;,
@@ -5795,7 +5795,7 @@ export function generateServiceSchema(data: ServiceSchemaData, isSubService: boo
     },
     &quot;provider&quot;: {
       &quot;@type&quot;: &quot;Organization&quot;,
-      &quot;name&quot;: &quot;Mu3lnen Digital Marketing Agency&quot;,
+      &quot;name&quot;: &quot;Digital Architect Digital Marketing Agency&quot;,
       &quot;url&quot;: baseUrl,
       &quot;logo&quot;: `${baseUrl}/logo.png`,
       &quot;address&quot;: {
@@ -5809,7 +5809,7 @@ export function generateServiceSchema(data: ServiceSchemaData, isSubService: boo
         &quot;@type&quot;: &quot;ContactPoint&quot;,
         &quot;telephone&quot;: &quot;+965-XXXX-XXXX&quot;,
         &quot;contactType&quot;: &quot;customer service&quot;,
-        &quot;email&quot;: &quot;info@mu3lnen.com&quot;,
+        &quot;email&quot;: &quot;info@Digital Architect.com&quot;,
         &quot;availableLanguage&quot;: [&quot;English&quot;, &quot;Arabic&quot;]
       }
     },
@@ -5846,9 +5846,9 @@ export function generateServiceSchema(data: ServiceSchemaData, isSubService: boo
       &quot;closes&quot;: &quot;18:00&quot;
     },
     &quot;sameAs&quot;: [
-      &quot;https://www.linkedin.com/company/mu3lnen&quot;,
-      &quot;https://www.instagram.com/mu3lnen&quot;,
-      &quot;https://twitter.com/mu3lnen&quot;
+      &quot;https://www.linkedin.com/company/Digital Architect&quot;,
+      &quot;https://www.instagram.com/Digital Architect&quot;,
+      &quot;https://twitter.com/Digital Architect&quot;
     ],
     &quot;image&quot;: [
       `${baseUrl}/images/digital-marketing-kuwait.jpg`
@@ -5861,7 +5861,7 @@ import { headers } from &#x27;next/headers&#x27;;
 import { Metadata } from &#x27;next&#x27;;
 
 export const getMetadataBase = (): string =&gt; {
-  const host = headers().get(&#x27;host&#x27;) || &#x27;mu3lnen.com&#x27;;
+  const host = headers().get(&#x27;host&#x27;) || &#x27;Digital Architect.com&#x27;;
   return `https://${host.replace(/\/$/, &#x27;&#x27;)}`;
 };
 
@@ -5879,14 +5879,14 @@ export const getLocalizedMetadata = (
 
   const titles = {
     home: {
-      en: &#x27;Mu3lnen - Leading Digital Marketing Agency in Kuwait&#x27;,
+      en: &#x27;Digital Architect - Leading Digital Marketing Agency in Kuwait&#x27;,
       ar: &#x27;موصلنين - وكالة التسويق الرقمي الرائدة في الكويت&#x27;,
     },
   };
 
   const descriptions = {
     home: {
-      en: &#x27;Mu3lnen is Kuwait\&#x27;s premier digital marketing agency, offering SEO, social media marketing, web design, and paid advertising services.&#x27;,
+      en: &#x27;Digital Architect is Kuwait\&#x27;s premier digital marketing agency, offering SEO, social media marketing, web design, and paid advertising services.&#x27;,
       ar: &#x27;موصلنين هي وكالة التسويق الرقمي الرائدة في الكويت، نقدم خدمات تحسين محركات البحث، التسويق عبر وسائل التواصل الاجتماعي، تصميم المواقع والإعلانات المدفوعة.&#x27;,
     },
   };
@@ -6184,7 +6184,7 @@ export const config = {
     &quot;contact&quot;: {
       &quot;title&quot;: &quot;اتصل بنا&quot;,
       &quot;address&quot;: &quot;مدينة الكويت، الكويت&quot;,
-      &quot;email&quot;: &quot;info@Mu3lnen.com&quot;,
+      &quot;email&quot;: &quot;info@Digital Architect.com&quot;,
       &quot;phone&quot;: &quot;+965 XXXX XXXX&quot;
     },
     &quot;followUs&quot;: {
@@ -6346,7 +6346,7 @@ export const config = {
   &quot;footer&quot;: {
     &quot;company&quot;: {
       &quot;about&quot;: &quot;Kuwait&#x27;s Leading Digital Marketing Agency, delivering exceptional results through innovative strategies.&quot;,
-      &quot;title&quot;: &quot;Mu3lnen&quot;
+      &quot;title&quot;: &quot;Digital Architect&quot;
     },
     &quot;services&quot;: {
       &quot;title&quot;: &quot;Services&quot;,
@@ -6360,13 +6360,13 @@ export const config = {
     &quot;contact&quot;: {
       &quot;title&quot;: &quot;Contact&quot;,
       &quot;address&quot;: &quot;Kuwait City, Kuwait&quot;,
-      &quot;email&quot;: &quot;info@Mu3lnen.com&quot;,
+      &quot;email&quot;: &quot;info@Digital Architect.com&quot;,
       &quot;phone&quot;: &quot;+965 XXXX XXXX&quot;
     },
     &quot;followUs&quot;: {
       &quot;title&quot;: &quot;Follow Us&quot;
     },
-    &quot;copyright&quot;: &quot;© 2025 Mu3lnen Digital Marketing Agency. All rights reserved.&quot;
+    &quot;copyright&quot;: &quot;© 2025 Digital Architect Digital Marketing Agency. All rights reserved.&quot;
   }
 }</div>
 <div class="file" style="margin-left: 80px;">📄 companies.json</div>
@@ -6487,7 +6487,7 @@ export const config = {
     &quot;title&quot;: &quot;What Our Clients Say&quot;,
     &quot;items&quot;: [
       {
-        &quot;quote&quot;: &quot;Mu3lnen transformed our digital presence completely. Their innovative approach and deep understanding of the Kuwait market made all the difference.&quot;,
+        &quot;quote&quot;: &quot;Digital Architect transformed our digital presence completely. Their innovative approach and deep understanding of the Kuwait market made all the difference.&quot;,
         &quot;name&quot;: &quot;Abdullah Al-Salem&quot;,
         &quot;designation&quot;: &quot;CEO at Kuwait Tech&quot;,
         &quot;src&quot;: &quot;https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&amp;w=3387&amp;auto=format&amp;fit=crop&quot;

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!subService) return { title: 'Not Found' };
 
   const content = subService[locale];
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mu3lnen.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalarchitect.dev';
   const url = `${baseUrl}/${locale}/services/${params.serviceSlug}/${params.subServiceSlug}`;
 
   return {

@@ -51,7 +51,7 @@ export const Hero = () => {
       >
         <div className="relative w-full h-full">
           <Image
-            src="/hero-image.jpg"
+            src="/hero-image.png"
             alt="hero"
             fill
             className="mx-auto rounded-2xl object-cover object-center"

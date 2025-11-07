@@ -16,7 +16,7 @@ interface SchemaProps {
 
 export default function Schema({ type, locale }: SchemaProps) {
   const isArabic = locale === 'ar';
-  const baseUrl = 'https://mu3lnen.com';
+  const baseUrl = 'https://digitalarchitect.dev';
 
   const graph: WithContext<Graph> = {
     '@context': 'https://schema.org',
@@ -24,7 +24,7 @@ export default function Schema({ type, locale }: SchemaProps) {
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: isArabic ? 'موصلنين' : 'Mu3lnen Digital Marketing Agency',
+        name: isArabic ? 'موصلنين' : 'Digital Architect Digital Marketing Agency',
         url: baseUrl,
         logo: {
           '@type': 'ImageObject',
@@ -33,13 +33,13 @@ export default function Schema({ type, locale }: SchemaProps) {
           contentUrl: `${baseUrl}/logo.png`,
           width: 112,
           height: 112,
-          caption: isArabic ? 'شعار موصلنين' : 'Mu3lnen Logo'
+          caption: isArabic ? 'شعار موصلنين' : 'Digital Architect Logo'
         },
         sameAs: [
-          'https://www.facebook.com/mu3lnen',
-          'https://twitter.com/mu3lnen',
-          'https://www.instagram.com/mu3lnen',
-          'https://www.linkedin.com/company/mu3lnen'
+          'https://www.facebook.com/Digital Architect',
+          'https://twitter.com/Digital Architect',
+          'https://www.instagram.com/Digital Architect',
+          'https://www.linkedin.com/company/Digital Architect'
         ],
         contactPoint: {
           '@type': 'ContactPoint',
@@ -53,7 +53,7 @@ export default function Schema({ type, locale }: SchemaProps) {
         '@type': 'WebSite',
         '@id': `${baseUrl}/#website`,
         url: baseUrl,
-        name: isArabic ? 'موصلنين' : 'Mu3lnen Digital Marketing Agency',
+        name: isArabic ? 'موصلنين' : 'Digital Architect Digital Marketing Agency',
         description: isArabic 
           ? 'وكالة التسويق الرقمي الرائدة في الكويت'
           : "Kuwait's Leading Digital Marketing Agency",
@@ -65,7 +65,7 @@ export default function Schema({ type, locale }: SchemaProps) {
       {
         '@type': 'LocalBusiness',
         '@id': `${baseUrl}/#localbusiness`,
-        name: isArabic ? 'موصلنين' : 'Mu3lnen Digital Marketing Agency',
+        name: isArabic ? 'موصلنين' : 'Digital Architect Digital Marketing Agency',
         url: baseUrl,
         logo: {
           '@id': `${baseUrl}/#logo`

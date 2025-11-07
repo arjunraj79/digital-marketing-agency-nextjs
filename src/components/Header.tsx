@@ -36,7 +36,7 @@ export const Header = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link href={`/${currentLocale}`} className="text-4xl font-bold text-purple-600">
-              Mu3lnen
+              Digital Architect
             </Link>
           </div>
           
